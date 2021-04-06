@@ -107,9 +107,9 @@ class Enigma():
     def fixPositioning(self):
         self.position3 += 1
         if self.position3 >= 26:
-            self.position3 = self.position1 % 26
+            self.position3 = self.position3 % 26
             self.position2 += 1
             if self.position2 >= 26:
                 self.position2 = self.position2 % 26
                 self.position1 += 1
-                self.position1 = self.position3 % 26
+                self.position1 = self.position1 % 26
